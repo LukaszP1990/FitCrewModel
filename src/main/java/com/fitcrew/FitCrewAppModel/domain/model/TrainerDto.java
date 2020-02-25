@@ -24,20 +24,27 @@ public class TrainerDto implements Serializable {
     @Size(min = 2, max = 20, message = "Last name of trainer must be equal or grater than 2 characters and less than 20 character")
     private String lastName;
 
-    @NotNull(message = "Place in the ranking cannot be null")
-    private String placeInTheRanking;
-
-    @NotNull(message = "Type of training cannot be null")
-    @Size(min = 2, max = 20, message = "Type of training must be equal or grater than 2 characters and less than 20 character")
-    private String typesOfTraining;
-
-    @NotNull(message = "Short description about yourself cannot be null")
-    @Size(min = 2, max = 200, message = "Short description about yourself must be equal or grater than 2 characters and less than 20 character")
-    private String somethingAboutYourself;
-
     @NotNull(message = "Trainer email address cannot be null")
     private String email;
 
     @NotNull(message = "Trainer phone number cannot be null")
     private String phone;
+
+    @NotNull(message = "Date of birth cannot be null")
+    @Size(min = 2, max = 20, message = "Date of birth must be equal or grater than 2 characters and less than 20 character")
+    private String dateOfBirth;
+
+    @NotNull(message = "Short description about trainer cannot be null")
+    @Size(min = 2, max = 200, message = "Last trainingName of trainer must be equal or grater than 2 characters and less than 200 character")
+    private String somethingAboutYourself;
+
+    @NotNull(message = "Password cannot be null")
+
+    private String password;
+
+
+    private String trainerId;
+
+
+    private String encryptedPassword;
 }
