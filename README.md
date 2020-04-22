@@ -1,2 +1,2 @@
 # FitCrewModel
-Dto models using by most of FitCrew microservises 
+Models using by most of FitCrew microservises 
